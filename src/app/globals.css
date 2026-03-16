@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #081226;
+  --color-navy-light: #11213f;
+  --color-navy-mid: #213556;
+  --color-shield-gold: #c8ab5d;
+  --color-shield-gold-light: #e3c87b;
+  --color-steel: #8ea1b9;
+  --color-steel-light: #bfcce0;
+  --color-ice: #edf2f9;
+
+  /* Apex Capital Dark palette */
+  --color-apex-bg: #020810;
+  --color-apex-p1: #060e1c;
+  --color-apex-p2: #0a1428;
+  --color-apex-p3: #0e1c35;
+  --color-apex-cyan: #00d4ff;
+  --color-apex-mint: #00ffb3;
+  --color-apex-orange: #ff6b35;
+  --color-apex-purple: #b94dff;
+  --color-apex-gold: #ffc832;
+  --color-apex-red: #ff3d5a;
+  --color-apex-pink: #ff3fa0;
+  --color-apex-teal: #3cf0ff;
+  --color-apex-lime: #8fff5a;
+  --color-apex-text: #d8eeff;
+  --color-apex-muted: #3d6080;
+  --color-apex-secondary: #6a90aa;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background:
+    radial-gradient(1200px 700px at 70% -10%, rgb(35 59 94 / 40%), transparent 65%),
+    radial-gradient(900px 600px at 20% 110%, rgb(14 33 66 / 50%), transparent 65%),
+    var(--color-navy);
+  min-height: 100vh;
+}
+
+.ambient-grid {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgb(255 255 255 / 2%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 2%) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at 50% 25%, black 30%, transparent 85%);
+}
+
+.hero-glow {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 320px;
+  width: min(900px, 90vw);
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgb(200 171 93 / 22%) 0%, transparent 70%);
+  filter: blur(6px);
+}
+
+.shadow-card {
+  box-shadow: 0 18px 50px rgb(2 8 20 / 28%);
+}
+
+.field {
+  width: 100%;
+  border: 1px solid rgb(33 53 86 / 85%);
+  border-radius: 0.5rem;
+  background: rgb(9 21 42 / 80%);
+  color: var(--color-ice);
+  padding: 0.75rem 1rem;
+  transition: border-color 180ms ease;
+}
+
+.field::placeholder {
+  color: rgb(142 161 185 / 65%);
+}
+
+.field:focus {
+  border-color: var(--color-shield-gold);
+  outline: none;
+}
