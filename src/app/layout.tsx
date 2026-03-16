@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ShieldSpec | SCIF and TEMPEST Window Film Compliance",
+  title: "Atlas Operational Mission Control",
   description:
-    "AI-powered compliance brokerage for classified facility window film installations. ICD 705 and TEMPEST certified workflows.",
+    "Command deck for managing Atlas architecture, memory, active work, experiments, and system visibility.",
 };
 
 export default function RootLayout({

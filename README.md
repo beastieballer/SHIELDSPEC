@@ -1,13 +1,13 @@
-# ShieldSpec Landing Page
+# Atlas Operational Mission Control
 
-Professional landing page for a government and national security focused compliance brokerage serving SCIF, TEMPEST, and secure facility window film projects.
+Atlas Operational Mission Control is a dark-themed command deck for managing Atlas architecture, memory, active work, experiments, and system visibility.
 
 ## Stack
 - Next.js 15 (App Router)
 - TypeScript
 - Tailwind CSS 4
 
-## Run
+## Run locally
 1. Install dependencies:
    - `npm install`
 2. Start dev server:
@@ -17,6 +17,12 @@ Professional landing page for a government and national security focused complia
 4. Start production:
    - `npm run start`
 
+## Routes
+- `/` — main Mission Control experience
+- `/mission-control` — direct Mission Control route
+- `/atlas-operational-mission-control.html` — static HTML snapshot
+
 ## Notes
-- Replace `https://formspree.io/f/placeholder` in `/Users/alexpotter/Documents/SHIELDSPEC/src/app/page.tsx` with your live form endpoint.
-- Update copy and claims to match your exact legal and contracting posture.
+- This repo is now focused on Atlas Operational Mission Control.
+- Keep branding, metadata, and UI copy aligned with that identity.
+- Use the static HTML snapshot when a simple previewable artifact is useful alongside the app.

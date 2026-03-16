@@ -454,16 +454,15 @@ export default function OpenClawMissionControl() {
         <header className="rounded-2xl border border-apex-muted/15 bg-gradient-to-br from-apex-p1 via-apex-bg to-apex-p2/50 p-6 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.5)] md:p-8">
           <div className="flex flex-col gap-6 xl:flex-row xl:items-end xl:justify-between">
             <div>
-              <Badge variant="cyan">OpenClaw Mission Control</Badge>
+              <Badge variant="cyan">Atlas Operational Mission Control</Badge>
               <h1
                 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-5xl"
                 style={{ fontFamily: "'Bebas Neue', 'Outfit', sans-serif" }}
               >
-                Markdown Brain Command Deck
+                Operational Command Deck
               </h1>
               <p className="mt-3 max-w-2xl text-sm leading-7 text-apex-secondary md:text-base">
-                One organized command surface for your router, executor, skills, workflows,
-                memory, and autoresearch targets. Tiny files. Big order. Fewer gremlins.
+                One organized command surface for Atlas architecture, memory, active work, experiments, and system visibility. Tiny files. Big order. Better operational clarity.
               </p>
               <div className="mt-3 flex items-center gap-4 text-xs text-apex-muted">
                 <span>{totalAssets} total assets</span>
@@ -969,7 +968,7 @@ export default function OpenClawMissionControl() {
           <div className="flex items-center gap-3">
             <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-apex-cyan" />
             <span className="text-xs text-apex-muted">
-              OpenClaw Mission Control &middot; Apex Capital Dark
+              Atlas Operational Mission Control &middot; Apex Capital Dark
             </span>
           </div>
           <div className="hidden items-center gap-4 text-[10px] text-apex-muted md:flex">
